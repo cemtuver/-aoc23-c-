@@ -1,11 +1,5 @@
 {
     "github.copilot.enable": {
         "*": false,
-    },
-    "files.associations": {
-        "iostream": "cpp",
-        "fstream": "cpp",
-        "string": "cpp",
-        "__config": "cpp"
     }
 }
