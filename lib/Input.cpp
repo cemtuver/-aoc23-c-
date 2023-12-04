@@ -42,3 +42,16 @@ std::vector<std::string> input::split(const std::string& input, const std::strin
 
     return results;
 }
+
+std::vector<int> input::splitInt(const std::string& input, const std::string& delimiter) {
+    std::vector<int> result;
+    std::vector<std::string> numberStrings = input::split(input, delimiter);
+
+    for (std::string numberString : numberStrings) {
+        if (!numberString.empty()) {
+            result.push_back(stoi(numberString));
+        }
+    }
+
+    return result;
+}
