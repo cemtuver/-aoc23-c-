@@ -12,6 +12,8 @@ namespace input {
 
     std::vector<int> splitInt(const std::string& input, const std::string& delimiter);
 
+    std::vector<long> splitLong(const std::string& input, const std::string& delimiter);
+
 }
 
 #endif
