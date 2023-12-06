@@ -68,3 +68,7 @@ std::vector<long> input::splitLong(const std::string& input, const std::string& 
 
     return result;
 }
+
+void input::remove(std::string& input, const char charToRemove) {
+    input.erase(remove(input.begin(), input.end(), charToRemove), input.end());
+}
