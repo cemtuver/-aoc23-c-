@@ -1,10 +1,12 @@
 #include <iostream>
 #include <fstream>
 #include <cctype>
+#include "../lib/Perf.hpp"
 
 using namespace std;
 
 int main() {
+    Perf perf;
     int result = 0;
     string line;
     ifstream input("input.txt");
@@ -39,6 +41,7 @@ int main() {
 
     input.close();
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }

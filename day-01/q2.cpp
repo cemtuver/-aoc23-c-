@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cctype>
 #include <vector>
+#include "../lib/Perf.hpp"
 
 using namespace std;
 
@@ -9,6 +10,7 @@ vector<string> words = {"zero", "one", "two", "three", "four", "five", "six", "s
 int getDigit(string& line, int i);
 
 int main() {
+    Perf perf;
     int result = 0;
     string line;
     ifstream input("input.txt");
@@ -43,6 +45,7 @@ int main() {
 
     input.close();
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }

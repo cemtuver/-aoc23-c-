@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
 #include "../lib/Input.hpp"
+#include "../lib/Perf.hpp"
 
 using namespace std;
 struct element { long start; long end; };
 
 int main() {
+    Perf perf;
     long result = LONG_MAX;
     vector<string> lines = input::readLines("input.txt");
     vector<long> seeds = input::splitLong(lines.at(0).substr(7), " ");
@@ -89,6 +91,7 @@ int main() {
     }
 
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }

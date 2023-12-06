@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
 #include "../lib/Input.hpp"
+#include "../lib/Perf.hpp"
 
 using namespace std;
 const int MAX_NUMBER = 100, MAX_CARD = 250;
 
 int main() {
+    Perf perf;
     int result = 0;
     int copyIndex = 0;
     int copies[MAX_CARD];
@@ -41,6 +43,7 @@ int main() {
     }
 
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }

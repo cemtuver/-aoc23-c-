@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
 #include "../lib/Input.hpp"
+#include "../lib/Perf.hpp"
 
 using namespace std;
 
 int main() {
+    Perf perf;
     long result = LONG_MAX;
     vector<string> lines = input::readLines("input.txt");
     vector<long> sourceElements;
@@ -56,6 +58,7 @@ int main() {
     }
 
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }

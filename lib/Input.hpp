@@ -1,8 +1,7 @@
 #include <vector>
 #include <string>
 
-#ifndef INPUT_HPP
-#define INPUT_HPP
+#pragma once
 
 namespace input {
 
@@ -17,5 +16,3 @@ namespace input {
     void remove(std::string& input, const char charToRemove);
 
 }
-
-#endif

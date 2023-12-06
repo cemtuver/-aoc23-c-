@@ -2,12 +2,14 @@
 #include <string>
 #include <cctype>
 #include "../lib/Input.hpp"
+#include "../lib/Perf.hpp"
 
 using namespace std;
 struct number { int number; int row; int columnStart; int columnEnd; };
 struct gear { int partNumberCount; int gearRatio; };
 
 int main() {
+    Perf perf;
     int result = 0;
     vector<number> numbers;
     vector<string> lines = input::readLines("input.txt");
@@ -112,6 +114,7 @@ int main() {
     }
 
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }

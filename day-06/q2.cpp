@@ -2,10 +2,12 @@
 #include <vector>
 #include <string>
 #include "../lib/Input.hpp"
+#include "../lib/Perf.hpp"
 
 using namespace std;
 
 int main() {
+    Perf perf;
     long result;
     vector<string> lines = input::readLines("input.txt");
     string timeString = lines.at(0).substr(9);
@@ -26,6 +28,7 @@ int main() {
 
     result = pressTimeHigh - pressTimeLow + 1;
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }

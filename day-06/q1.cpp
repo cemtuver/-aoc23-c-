@@ -2,10 +2,12 @@
 #include <vector>
 #include <string>
 #include "../lib/Input.hpp"
+#include "../lib/Perf.hpp"
 
 using namespace std;
 
 int main() {
+    Perf perf;
     int result = 1;
     vector<string> lines = input::readLines("input.txt");
     vector<int> times = input::splitInt(lines.at(0).substr(9), " ");
@@ -26,6 +28,7 @@ int main() {
     }
 
     cout << result << endl;
+    cout << perf.measure() << " ms" << endl;
 
     return 0;
 }
