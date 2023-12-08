@@ -2,6 +2,7 @@
 #include <vector>
 #include "../lib/Input.hpp"
 #include "../lib/Perf.hpp"
+#include "../lib/Math.hpp"
 
 using namespace std;
 

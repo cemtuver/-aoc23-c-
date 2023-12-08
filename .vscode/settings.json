@@ -71,6 +71,7 @@
         "filesystem": "cpp",
         "__verbose_abort": "cpp",
         "charconv": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "__assert": "cpp"
     }
 }
