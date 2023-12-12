@@ -72,6 +72,11 @@
         "__verbose_abort": "cpp",
         "charconv": "cpp",
         "variant": "cpp",
-        "__assert": "cpp"
+        "__assert": "cpp",
+        "map": "cpp",
+        "__tree": "cpp",
+        "regex": "cpp",
+        "set": "cpp",
+        "span": "cpp"
     }
 }
