@@ -79,6 +79,7 @@
         "regex": "cpp",
         "set": "cpp",
         "span": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "unordered_set": "cpp"
     }
 }
