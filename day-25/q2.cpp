@@ -10,11 +10,7 @@ int main() {
     Perf perf;
     long long result = 0;
 
-    for (string line : input::readLines("input.txt")) {
-        
-    }
-
-    cout << result << endl;
+    cout << "Happy holidays and a new year!" << endl;
     cout << perf.measure() << " ms" << endl;
 
     return 0;
