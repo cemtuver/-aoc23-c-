@@ -69,6 +69,19 @@ std::vector<long> input::splitLong(const std::string& input, const std::string& 
     return result;
 }
 
+std::vector<long long> input::splitLongLong(const std::string& input, const std::string& delimiter) {
+    std::vector<long long> result;
+    std::vector<std::string> numberStrings = input::split(input, delimiter);
+
+    for (std::string numberString : numberStrings) {
+        if (!numberString.empty()) {
+            result.push_back(stoll(numberString));
+        }
+    }
+
+    return result;
+}
+
 void input::remove(std::string& input, const char charToRemove) {
     input.erase(remove(input.begin(), input.end(), charToRemove), input.end());
 }
